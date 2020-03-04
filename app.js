@@ -17,7 +17,7 @@ function changeBackgroundColors() {
     timerId = setInterval(() => {
         body.style.backgroundColor = colors[(randomIntegerFromInterval(colors.length, 0))]
 
-    }, 100)
+    }, 1000)
     startBtn.setAttribute('disabled', true)
 }
 startBtn.addEventListener("click", changeBackgroundColors)
